@@ -4,3 +4,6 @@ YouTube clone built with React for Udemy course [Modern React with Redux](https:
 ###Concepts Explored###
 - JSX with ES6
 - AJAX requests with React
+
+###TODO###
+- Minify build code with UglifyJS and cssnano
