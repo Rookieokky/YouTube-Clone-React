@@ -106,7 +106,7 @@
 	      selectedVideo: null
 	    };
 
-	    _this.videoSearch('music');
+	    _this.videoSearch('badbadnotgood weight off');
 	    return _this;
 	  }
 
@@ -134,12 +134,16 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_search_bar2.default, { onSearchTermChange: videoSearch }),
-	        _react2.default.createElement(_video_detail2.default, { video: this.state.selectedVideo }),
-	        _react2.default.createElement(_video_list2.default, {
-	          onVideoSelect: function onVideoSelect(selectedVideo) {
-	            return _this3.setState({ selectedVideo: selectedVideo });
-	          },
-	          videos: this.state.videos })
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2.default.createElement(_video_detail2.default, { video: this.state.selectedVideo }),
+	          _react2.default.createElement(_video_list2.default, {
+	            onVideoSelect: function onVideoSelect(selectedVideo) {
+	              return _this3.setState({ selectedVideo: selectedVideo });
+	            },
+	            videos: this.state.videos })
+	        )
 	      );
 	    }
 	  }]);
